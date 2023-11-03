@@ -15,8 +15,6 @@ document.querySelector(".btn-click").addEventListener("click", () => {
     colorInput.value = main.style.backgroundColor = colorText.textContent = RandomColor()
 })
 
-const btnOver = document.querySelector(".btn-over")
-
 document.querySelector(".btn-over").addEventListener("mouseover", () => {
     colorInput.value = main.style.backgroundColor = colorText.textContent = RandomColor()
 })
