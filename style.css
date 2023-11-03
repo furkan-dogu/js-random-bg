@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+    /* background-color: yellow; */
+}
+
+.colorDiv {
+    position: absolute;
+    top: 3%;
+    text-align: center;
+    background-color: white;
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+.colorDiv h2 i {
+    cursor: pointer;
+}
+
+.colorDiv input{
+    cursor: pointer;
+    margin: .3rem;
+}
+
+.btn-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.btn {
+    width: 8rem;
+    height: 2rem;
+    border-radius: .5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+}
+
+.btn-click {
+    background-color: salmon;
+}
+
+.btn-over {
+    background-color: green;
+}
