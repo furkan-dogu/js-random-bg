@@ -11,12 +11,12 @@ const main = document.querySelector(".bgDiv")
 const colorInput = document.getElementById("colorInput")
 const colorText = document.getElementById("colorText")
 
-document.getElementById("ColorButton").addEventListener("click", () => {
+document.querySelector(".btn-click").addEventListener("click", () => {
     colorInput.value = main.style.backgroundColor = colorText.textContent = RandomColor()
 })
 
-const mouseOver = document.getElementById("mouseover")
+const btnOver = document.querySelector(".btn-over")
 
-document.getElementById("mouseover").addEventListener("mouseover", () => {
+document.querySelector(".btn-over").addEventListener("mouseover", () => {
     colorInput.value = main.style.backgroundColor = colorText.textContent = RandomColor()
 })
