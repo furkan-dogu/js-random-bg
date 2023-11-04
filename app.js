@@ -10,11 +10,20 @@ function RandomColor() {
 const main = document.querySelector(".bgDiv")
 const colorInput = document.getElementById("colorInput")
 const colorText = document.getElementById("colorText")
+const h1 = document.querySelector(".hero")
+
+function ortak () {
+    h1.style.color = colorInput.value = main.style.backgroundColor = colorText.textContent = RandomColor()
+}
 
 document.querySelector(".btn-click").addEventListener("click", () => {
-    colorInput.value = main.style.backgroundColor = colorText.textContent = RandomColor()
+    ortak()
 })
 
 document.querySelector(".btn-over").addEventListener("mouseover", () => {
-    colorInput.value = main.style.backgroundColor = colorText.textContent = RandomColor()
+    ortak()
+})
+
+window.addEventListener("load", () => {
+    ortak()
 })
