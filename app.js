@@ -11,7 +11,7 @@ const main = document.querySelector(".bgDiv")
 const colorInput = document.getElementById("colorInput")
 const colorText = document.getElementById("colorText")
 const h1 = document.querySelector(".hero")
-const copyIcon = document.querySelector(".bgDiv h2 i")
+const copyIcon = document.querySelector(".fa-clipboard")
 
 function ortak () {
     h1.style.color = colorInput.value = main.style.backgroundColor = colorText.textContent = RandomColor()
@@ -29,6 +29,10 @@ window.addEventListener("load", () => {
     ortak()
 })
 
+colorInput.addEventListener("input", () => {
+  colorText.textContent.toUpperCase = main.style.backgroundColor = h1.style.color = colorInput.value
+})
+
 document.addEventListener("keydown", (event) => {
   if (event.code === "Enter" || "NumpadEnter") {
     ortak();
@@ -37,10 +41,6 @@ document.addEventListener("keydown", (event) => {
 
 copyIcon.addEventListener("click", () => {
   navigator.clipboard.writeText(colorText.textContent).then(()=>{
-    console.log("Renk Kodu: ", colorText.textContent);
+    alert("Renk Kodu Kopyalandı")
   })
-})
-
-colorInput.addEventListener("input", () => {
-  colorText.textContent = main.style.backgroundColor = h1.style.color = colorInput.value
 })
