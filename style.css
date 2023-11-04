@@ -15,7 +15,7 @@ main{
 
 .colorDiv {
     position: absolute;
-    top: 3%;
+    top: 2%;
     text-align: center;
     background-color: white;
     height: 8rem;
@@ -64,13 +64,9 @@ main{
 }
 
 .hero {
-    margin-top: 1rem;
-    /* position: absolute;
-    top: 32%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
+    margin: 1.5rem 0;
     background-color: rgba(0, 0, 0, 0.8);
     padding: 1rem 2rem;
     border-radius: .5rem;
-    color: white;
+    color: white;   
 }
