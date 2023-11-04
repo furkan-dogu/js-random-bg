@@ -29,13 +29,7 @@ window.addEventListener("load", () => {
     ortak()
 })
 
-document.querySelector(".btn-click").addEventListener("keydown", (event) => {
-  if (event.code === "Enter") {
-    ortak();
-  }
-});
-
-document.addEventListener("keyup", (event) => {
+document.addEventListener("keydown", (event) => {
   if (event.code === "Enter" || "NumpadEnter") {
     ortak();
   }
