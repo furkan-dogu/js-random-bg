@@ -41,6 +41,7 @@ document.addEventListener("keydown", (event) => {
 
 copyIcon.addEventListener("click", () => {
   navigator.clipboard.writeText(colorText.textContent).then(()=>{
-    alert("Renk Kodu Kopyalandı")
+    alert(`Renk Kodu Başarıyla Kopyalandı :
+${colorText.textContent}`)
   })
 })
